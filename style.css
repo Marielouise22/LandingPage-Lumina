@@ -109,3 +109,16 @@ p {
   margin-bottom: 1.2rem;    
   max-width: 60ch;          
 }
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
