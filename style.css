@@ -65,3 +65,25 @@ body {
   font-size: 1.2rem;
   margin-top: 10px;     /* lidt luft under overskriften */
 }
+
+button {
+  font-size: 1.3rem;
+  padding: 16px 40px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  color: #010101;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 20px 40px;
+  font-size: 1rem;
+  color: #010101;
+  position: right;
+  bottom: 0;
+  width: 80%;
+}
