@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #fbfbfb;
 }
 
 /* Navbar */
@@ -23,9 +23,9 @@ body {
 
 /* Burgermenu og shop ikon */
 .shop-icon {
-  display: flex;              /* Lægger børn horisontalt */
+  display: flex;              
   gap: 10px;                  /* Afstand mellem dem */
-  align-items: center;        /* Centrerer vertikalt */
+  align-items: center;        /*vertikalt DISPLAYFLEX*/
   cursor: pointer;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .front-image {
     display: flex;
-    justify-content: center;
+    justify-content: center;  /*vertikalt HUSK DISPLAYFLEX */
     position: relative;
     
 }
@@ -66,24 +66,79 @@ body {
   margin-top: 10px;     /* lidt luft under overskriften */
 }
 
-button {
-  font-size: 1.3rem;
-  padding: 16px 40px;
-  border-radius: 8px;
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  margin-top: 30px;
+.forskellige-farver {
+  display: flex;
+  justify-content: space-between; /* Placerer venstre - midt - højre i midsten atigt */
+  align-items: center;
+  padding-left: 230px;    /*luft i siderne */
+  padding-right: 230px;
 }
 
-footer {
-  background-color: #ffffff;
-  text-align: left;
-  padding: 20px 40px;
-  font-size: 1rem;
-  color: #000000;
-  position: right;
-  bottom: 0;
-  width: 80%;
+.lumina-colors {
+  display: flex;
+  height: 180px;
+  border-radius: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth effekt */
+  cursor: pointer; /* viser at billedet kan interageres med */
+}
+
+.lumina-colors:hover {
+  transform: scale(1.05); /* gør billedet lidt større */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+}
+
+.lumina-color-product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2.4rem;        
+  font-weight: 400;         
+  color: #111;              
+  margin-bottom: 0.5rem;    
+  letter-spacing: -0.5px;   
+}
+
+/* tekst med totebag */
+p {
+  font-size: 1rem;          
+  line-height: 1.6;         
+  color: #555;              
+  margin-bottom: 1.2rem;    
+  max-width: 60ch;          
+}
+/*footeren*/
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*cta knappen*/
+.cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: transparent; /* gennemsigtig */
+  color: #111;                   /* sort tekst */
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 2px solid #111;        /* sort kant */
+  border-radius: 50px;           /* rundet form */
+  text-decoration: none;         /* fjern underline */
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+   /* flytter knappen horisontalt */
+  margin-left: 70px;  /* rykker lidt til højre */
+}
+
+
+
+.cta-button:hover {
+  background-color: #111; /* sort baggrund */
+  color: #fff;            /* hvid tekst */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
